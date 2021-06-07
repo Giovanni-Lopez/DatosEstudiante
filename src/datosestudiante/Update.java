@@ -16,7 +16,7 @@ public class Update {
         System.out.println("<< ACTUALIZAR REGISTROS >>");
         
         System.out.println("Ingresar id del registro a modificar: ");
-        est.setId_estudiante(leer.nextInt());
+        est.setId_estudiante(Integer.parseInt(leer.nextLine()));
         
         String tablaBuscar = "tb_estudiante";
         String camposBuscar = "id_estudiante, carnet_estudiante, nom_estudiante, ape_estudiante, edad_estudiante";
@@ -24,13 +24,13 @@ public class Update {
         utilerias.desplegarRegistros(tablaBuscar, camposBuscar, condicionBuscar);
         
         System.out.println("Carnet: ");
-        est.setCarnet_estudiante(leer.next());
+        est.setCarnet_estudiante(leer.nextLine());
         
         System.out.println("Nombres: ");
-        est.setNom_estudiante(leer.next());
+        est.setNom_estudiante(leer.nextLine());
         
         System.out.println("Apellidos: ");
-        est.setApe_estudiante(leer.next());
+        est.setApe_estudiante(leer.nextLine());
         
         System.out.println("Edad: ");
         est.setEdad_estudiante(leer.nextInt());
